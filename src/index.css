@@ -1,13 +1,20 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: 'msi';
+    src: url('./fonts/Vazir.eot') format('eot');
+    src: url('./fonts/Vazir.ttf') format('truetype'),
+        url('./fonts/Vazir.woff') format('woff');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+    font-family: 'msi';
 }
+
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: 'msi';
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
